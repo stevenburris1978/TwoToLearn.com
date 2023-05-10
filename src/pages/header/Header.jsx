@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { UserAuth } from "../components/context/AuthContext";
 import "./header.css";
 import logo from "../../assets/images/logo.png";
+import { UserAuth } from "../../components/context/AuthContext";
 
 export default function Header() {
 
@@ -23,8 +23,8 @@ export default function Header() {
     <>
       <div className="header">
         <div className="logorow">
-        <img src={logo} alt="TwoToLearn.Com"/> 
-        <h1>TwoToLearn.Com</h1>
+        <img className="logoImage" src={logo} alt="TwoToLearn.Com"/> 
+        <h1 className="htext">TwoToLearn.Com</h1>
         </div>
         <nav>
           <ul>

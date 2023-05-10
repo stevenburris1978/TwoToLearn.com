@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import "./lessondetails.css";
-import { Cart } from "../context/CartContext";
-import Card from "../shared/Card";
+import { Cart } from "../../context/CartContext";
+import Card from "../../shared/card/Card";
 import { NavLink, useNavigate } from "react-router-dom";
 
-const LessonDetails = ({ route, navigation }) => {
+const LessonDetails = ({ route }) => {
   const { lesson } = route.params;
-  const { addItemToCart } = Cart();
+  const { addLessonToCart } = Cart();
   const [quantity, setQuantity] = useState(1);
 
   const navigate = useNavigate();
 
   const handleAddToCart = async() => {
     try{
-      await addItemToCart({ ...lesson, quantity });
+      await addLessonToCart({ ...lesson, quantity });
       setQuantity(1);
-      navigation.navigate("/Cart");
+      navigate("/Cart");
     } catch (err) {
      console.log(err);
     }

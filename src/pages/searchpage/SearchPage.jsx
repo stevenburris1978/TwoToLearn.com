@@ -1,4 +1,3 @@
-import { useState } from "react";
 import SearchLessons from "../../components/Lesson/SearchLessons";
 
 export default function SearchPage() {

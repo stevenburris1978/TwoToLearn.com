@@ -13,9 +13,9 @@
   }
   .loginForm{
     width: 90%;
-    height: 90%;
+    height: 80%;
     margin: 7.5rem auto;
-    background-color: var(--color-white);
+    background-color: var(--color-dark);
     border-radius: var(--border-radius-3);
   }
   .forgotPasswordLink {

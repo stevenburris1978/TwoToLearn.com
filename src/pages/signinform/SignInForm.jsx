@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import FormButton from "../components/shared/FormButton";
-import FormHeader from "../components/shared/FormHeader";
-import FormInput from "../components/shared/FormInput";
+import FormButton from "../../components/shared/formbutton/FormButton";
+import FormHeader from "../../components/shared/formheader/FormHeader";
+import FormInput from "../../components/shared/forminput/FormInput";
 import { FaFacebook, FaMeetup, FaGoogle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { UserAuth } from "../components/context/AuthContext";
 import "./signinform.css";
+import { UserAuth } from "../../components/context/AuthContext";
 
 export default function SignInForm() {
   const [showRegisterForm, setShowRegisterForm] = useState(false);

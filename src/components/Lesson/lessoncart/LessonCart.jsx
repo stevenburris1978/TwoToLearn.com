@@ -1,9 +1,7 @@
-import React, { useContext } from "react";
-import { Cart } from "../context/CartContext";
+import { Cart } from "../../context/CartContext";
 import "./lessoncart.css";
-import { FaTrash } from "react-icons/fa";
-import Card from "../shared/Card";
-import Lesson from "./lesson/Lesson";
+import Card from "../../shared/card/Card";
+import Lesson from "../lesson/Lesson";
 
 const LessonCart = () => {
   const { cartLessons, calculateTotalPrice } =

@@ -1,10 +1,9 @@
 import { useFormik } from "formik";
 import React, { useContext, useEffect } from "react";
-import Card from "../shared/Card";
-import LessonContext from "../context/LessonContext";
+import Card from "../../shared/card/Card";
 import "./addlesson.css";
-
 import * as Yup from "yup";
+import LessonContext from "../../context/LessonContext";
 
 export default function AddLesson() {
   
@@ -20,7 +19,7 @@ export default function AddLesson() {
     },
 
     validationSchema: Yup.object({
-      lesson: Yup.string()
+      category: Yup.string()
         .required("Category is required"),
       level: Yup.string()
         .required("Instruction level is required"),
@@ -36,7 +35,7 @@ export default function AddLesson() {
 
     onSubmit: (values) => {
       if (lessonEdit.edit === true) {
-        updateProduct(lessonEdit.lesson.id, values);
+        updateLesson(lessonEdit.lesson.id, values);
         formik.resetForm();
         lessonEdit.edit = false;
       } else {

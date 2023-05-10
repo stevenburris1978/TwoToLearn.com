@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { FaTrashAlt, FaEdit } from "react-icons/fa";
-import Card from "../shared/Card";
-import LessonContext from "../context/LessonContext";
 import "./lesson.css";
+import Card from "../../shared/card/Card";
+import LessonContext from "../../context/LessonContext";
 
 export default function Lesson({
   id,
@@ -17,6 +17,11 @@ export default function Lesson({
 
 }) {
   const { checkLesson, deleteLesson, editLesson } = useContext(LessonContext);
+    // const navigate = useNavigate();
+
+  // const navigateToLessonDetails = (lesson) => {
+  //   navigate("/LessonDetails", { lesson });
+  // };
   return (
     <>
       <Card>
@@ -70,6 +75,12 @@ export default function Lesson({
         <button onClick={() => deleteLesson(id)} className="delete">
           <FaTrashAlt />
         </button>
+                  {/* <NavLink
+          classname="addToCartButton"
+          onClick={navigateToLessonDetails}
+        >
+          <h3 className="addToCartText">Add to Cart</h3>
+         </NavLink> */}
       </Card>
     </>
   );

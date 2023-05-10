@@ -1,8 +1,7 @@
 import React, { useState, useContext } from "react";
 import SearchCard from "./searchcard/SearchCard";
-import Lesson from "./lesson/Lesson";
 import LessonContext from "../context/LessonContext";
-
+import Lesson from "./lesson/Lesson";
 
 export default function SearchLessons() {
   const [search, setSearch] = useState("");

@@ -5,8 +5,59 @@
     padding: 1.5rem;
     background-color: indigo;
     color: var(--color-white);
+    align-items: "center";
   }
+
+  .logoImage {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 2.5rem;
+    padding: 30,
+  }
+
+  .htext {
+    margin-left: .7rem;
+  }
+
   .logorow {
-    padding: 1.5rem;
-    flex-direction: row;
+    flex: 1;
+    display: flex;
+    padding: 3rem,;
+    align-items: flex-start;
+    width: "100%";
+    margin-bottom: .75rem;
+  }
+  nav {
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    color: white;
+    height: 3.75rem;
+    padding: 1rem;
+    border-radius: var(--border-radius-2);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: .7rem;
+  }
+  
+  nav a {
+    color: #ac7207;
+    text-decoration: none;
+    padding: .75rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #e4bcbc;
+    border-radius: .75rem;
   }

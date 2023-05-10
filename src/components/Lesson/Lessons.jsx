@@ -1,14 +1,9 @@
+
 import LessonContext from "../context/LessonContext";
 import Lesson from "./lesson/Lesson";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useContext } from "react";
 
-export default function Lessons({ navigation }) {
-
-  const navigate = useNavigate();
-
-  const navigateToLessonDetails = (lesson) => {
-    navigation.navigate("/ProductDetails", { lesson });
-  };
+export default function Lessons() {
 
   const { lessonList } = useContext(LessonContext);
   const result = lessonList;
@@ -31,6 +26,8 @@ export default function Lessons({ navigation }) {
               lesson={lesson}
             />
           ))}
+
+
         </div>
       ) : (
         <p>Lesson List is empty</p>

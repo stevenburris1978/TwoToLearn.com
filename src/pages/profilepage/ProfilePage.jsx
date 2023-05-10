@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import FormHeader from "../components/shared/FormHeader";
-import FormInput from "../components/shared/FormInput";
-import FormButton from "../components/shared/FormButton";
-import { UserAuth } from "../components/context/AuthContext";
-import { auth } from "../firebase";
+import FormHeader from "../../components/shared/formheader/FormHeader";
+import FormInput from "../../components/shared/forminput/FormInput";
+import FormButton from "../../components/shared/formbutton/FormButton";
+import { UserAuth } from "../../components/context/AuthContext";
+import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import "./profilepage.css";
 import ttlearn from "../../assets/images/ttlearn.png";

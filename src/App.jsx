@@ -11,8 +11,9 @@ import SearchPage from "./pages/searchpage/SearchPage";
 import CartPage from "./pages/cartpage/CartPage";
 import ProfilePage from "./pages/profilepage/ProfilePage";
 import HomePage from "./pages/homepage/HomePage";
-import Footer from "./pages/footer/Footer";
+// import Footer from "./pages/footer/Footer";
 import DetailsPage from "./pages/detailspage/DetailsPage";
+
 
 
 export default function App() {
@@ -29,10 +30,10 @@ export default function App() {
           <Route path="/detailspage" element={<ProtectedRoute><DetailsPage /></ProtectedRoute>} />
           <Route path="/cart" element={<ProtectedRoute><CartPage /></ProtectedRoute>} />
           <Route path="/search" element={<ProtectedRoute><SearchPage /></ProtectedRoute>} />
-          <Route path="/task/*" element={<ProtectedRoute><LessonRoutes /></ProtectedRoute>} />
+          <Route path="/lesson/*" element={<ProtectedRoute><LessonRoutes /></ProtectedRoute>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </LessonProvider>
     </AuthContextProvider>

@@ -47,26 +47,6 @@
     max-width: 1920px;
     padding: 0 1.5rem;
   }
-  /* General Setion Styles */
-  section {
-    padding: 10rem 0;
-    background: var(--color-light);
-    transition: var(--transition);
-  }
-  
-  section:nth-child(even) {
-    background: var(--color-white);
-  }
-  
-  section > h2 {
-    text-align: center;
-  }
-  
-  section > p {
-    text-align: center;
-    margin: 0.5rem auto 4rem;
-    width: 40%;
-  }
   
   a {
     color: var(--color-black);
@@ -136,12 +116,12 @@
   }
   .btn.primary {
     background: var(--color-primary);
-    color: white;
+    color: black;
   }
   .btn.primary:hover {
     background: transparent;
     border-color: var(--color-primary);
-    color: var(--color-primary);
+    color: black;
   }
   .btn.sm {
     padding: 0.5rem 1.2rem;
