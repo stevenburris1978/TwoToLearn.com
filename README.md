@@ -8,7 +8,7 @@ This application has been deployed online and can be viewed at:
 
 ## 
 
-(https://www.TwoToLearn.com) 
+(https://www.twotolearn.com/) 
 
 # TwoToLearn.com - Figma/Wireframe
 
