@@ -16,4 +16,4 @@ This application's wireframe with component breakdown and future development inf
 
 ## 
 
-(https://www.figma.com/file/VL8MVVy3gODbJ64Ygbx1KF/Take-Lessons-App?type=design&node-id=0%3A1&t=dSQYn6KfioW6eNOp-1) 
+https://www.figma.com/file/VL8MVVy3gODbJ64Ygbx1KF/Take-Lessons-App?type=design&node-id=0%3A1&t=yiwCm7IuLO37ToHz-1
