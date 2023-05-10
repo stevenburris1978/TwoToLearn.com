@@ -1,0 +1,26 @@
+.registerLink{
+    text-align: center; 
+    margin: 0 1rem;
+  }
+  .alternativeLogin {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .iconGroup{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+  }
+  .loginForm{
+    width: 90%;
+    height: 90%;
+    margin: 7.5rem auto;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-3);
+  }
+  .forgotPasswordLink {
+    cursor: pointer;
+    color: var(--color-dark);
+    font-weight: 600;
+    text-align: right;
+  }

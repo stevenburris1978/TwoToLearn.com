@@ -1,0 +1,18 @@
+.container {
+      flex: 1;
+      border-color: var(--color-white);
+      align-items: "center";
+      justify-content: "center"
+}
+.bottom {
+      flex-direction: "row";
+      justify-content: "space-between";
+      align-items: "center";
+      width: "100%"
+}
+.total {
+      font-weight: "bold"
+}
+.empty {
+      font-weight: "bold"
+}

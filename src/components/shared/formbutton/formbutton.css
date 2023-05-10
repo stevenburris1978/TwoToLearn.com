@@ -1,0 +1,21 @@
+#button{
+    padding-bottom: 1.5rem;
+  }
+  .row button{
+    border-radius: var(--border-radius-3);
+    width: 80%;
+    height: 3.2rem;
+    font-size: 1.3rem;
+    color: var(--color-white);
+    font-weight: 700;
+    background: var(--color-dark);
+    background: linear-gradient(90deg, var(--color-black) 0%, var(--color-dark) 100%);
+    border: 0px;
+    cursor: pointer;
+    transition: var(--transition);
+  
+  }
+  
+  .row button:hover{
+    opacity: 0.8;
+  }

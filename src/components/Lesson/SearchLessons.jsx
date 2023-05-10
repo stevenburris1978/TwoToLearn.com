@@ -1,20 +1,23 @@
-import LessonContext from "../context/LessonContext";
+import React, { useState, useContext } from "react";
+import SearchCard from "./searchcard/SearchCard";
 import Lesson from "./lesson/Lesson";
-import { NavLink, useNavigate } from "react-router-dom";
+import LessonContext from "../context/LessonContext";
 
-export default function Lessons({ navigation }) {
 
-  const navigate = useNavigate();
-
-  const navigateToLessonDetails = (lesson) => {
-    navigation.navigate("/ProductDetails", { lesson });
-  };
+export default function SearchLessons() {
+  const [search, setSearch] = useState("");
 
   const { lessonList } = useContext(LessonContext);
-  const result = lessonList;
+
+  const result = lessonList.filter((lesson) => (
+    lesson.data.category.toLowerCase().includes(search.toLowerCase()) ||
+    lesson.data.location.toLowerCase().includes(search.toLowerCase())
+  ));
 
   return (
     <>
+      <SearchCard search={search} setSearch={setSearch} />
+      
       {result.length ? (
         <div>
           {result.map((lesson) => (
@@ -29,6 +32,7 @@ export default function Lessons({ navigation }) {
               price={lesson.data.price}
               checked={lesson.data.checked}
               lesson={lesson}
+
             />
           ))}
         </div>

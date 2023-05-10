@@ -1,0 +1,10 @@
+.input{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: .6rem 1.3rem;
+    width: 100%;
+    min-height: 3.2rem;
+    border-radius: var(--border-radius-3);
+    outline-color: var(--color-black);
+    background-color: var(--color-white);
+  }
