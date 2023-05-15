@@ -3,6 +3,7 @@ import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import "./lesson.css";
 import Card from "../../shared/card/Card";
 import LessonContext from "../../context/LessonContext";
+// import { NavLink } from "react-router-dom";
 
 export default function Lesson({
   id,

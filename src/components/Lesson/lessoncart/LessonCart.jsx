@@ -7,9 +7,11 @@ const LessonCart = () => {
   const { cartLessons, calculateTotalPrice } =
     Cart();
 
+
+    //* {cartLessons.length > 0 ? ( //*
   return (
     <Card className="container">
-      {cartLessons.length > 0 ? (
+      {cartLessons.length ? (
         <div>
           {cartLessons.map((lesson) => (
           <Lesson
