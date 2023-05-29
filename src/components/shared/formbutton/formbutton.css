@@ -3,11 +3,10 @@
   }
   .row button{
     border-radius: var(--border-radius-3);
-    width: 80%;
+    width: 100%;
     height: 3.2rem;
     font-size: 1.3rem;
     color: black;
-    font-weight: 700;
     background: #C3A7D7;
     background: linear-gradient(90deg, indigo 0%,     #C3A7D7 100%);
     border: 0px;
