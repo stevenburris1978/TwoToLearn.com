@@ -7,6 +7,7 @@ import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import "./profilepage.css";
 import ttlearn from "../../assets/images/ttlearn.png";
+import { FaTrashAlt } from "react-icons/fa";
 
 export default function ProfilePage() {
   const [name, setName] = useState(auth.currentUser.displayName);
@@ -63,6 +64,8 @@ export default function ProfilePage() {
           />
 
           <FormButton title="Edit Profile" />
+        
+
         </form>
       </>
     </div>
