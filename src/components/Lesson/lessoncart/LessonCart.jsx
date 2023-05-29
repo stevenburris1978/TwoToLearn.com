@@ -14,7 +14,7 @@ import Lesson from "../lesson/Lesson";
     
   return (
     <Card className="container">
-      <h1>Cart is still in development</h1>
+      <h1>Cart coming soon!</h1>
     {/* //   {cartLessons.length ? (
     //     <div>
     //       {cartLessons.map((lesson) => (
