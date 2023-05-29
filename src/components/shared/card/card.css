@@ -8,6 +8,7 @@
     margin: 1.5rem 0;
     position: relative;
     font-size: small;
+    min-width: 30rem;
   }
   
   .card:hover {

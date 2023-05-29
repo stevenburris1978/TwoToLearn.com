@@ -38,10 +38,10 @@ export default function Header({activeLink}) {
               <NavLink to="/cart">Cart</NavLink>
             </li>
             <li>
-              <NavLink to="/signIn">LogIn</NavLink>
+              <NavLink to="/profile">Profile</NavLink>
             </li>
             <li>
-              <NavLink to="/profile">Profile</NavLink>
+              <NavLink to="/signIn">LogIn</NavLink>
             </li>
             <li>
               <NavLink onClick={handelLogout}>Logout</NavLink>
