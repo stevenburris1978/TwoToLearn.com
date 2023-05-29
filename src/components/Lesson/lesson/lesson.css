@@ -12,6 +12,7 @@
     border: none;
     height: 9rem;
     font-size: 1.5rem;
+    color: indigo
   }
   .edit{
     position: absolute;
@@ -22,4 +23,5 @@
     border: none;
     height: 9rem;
     font-size: 1.5rem;
+    color: indigo
   }
