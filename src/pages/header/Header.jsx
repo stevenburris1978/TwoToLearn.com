@@ -4,7 +4,7 @@ import "./header.css";
 import logo from "../../assets/images/logo.png";
 import { UserAuth } from "../../components/context/AuthContext";
 
-export default function Header() {
+export default function Header({activeLink}) {
 
   const { logout } = UserAuth();
   const navigate = useNavigate();
@@ -20,11 +20,11 @@ export default function Header() {
   };
 
   return (
-    <>
+    
       <div className="header">
         <div className="logorow">
         <img className="logoImage" src={logo} alt="TwoToLearn.Com"/> 
-        <h1 className="htext">TwoToLearn.Com</h1>
+        <h2 className="htext">TwoToLearn.Com</h2>
         </div>
         <nav>
           <ul>
@@ -38,7 +38,7 @@ export default function Header() {
               <NavLink to="/cart">Cart</NavLink>
             </li>
             <li>
-              <NavLink to="/signIn">Log In</NavLink>
+              <NavLink to="/signIn">LogIn</NavLink>
             </li>
             <li>
               <NavLink to="/profile">Profile</NavLink>
@@ -49,6 +49,6 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-    </>
+    
   );
 }

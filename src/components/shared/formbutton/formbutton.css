@@ -9,7 +9,7 @@
     color: black;
     font-weight: 700;
     background: #C3A7D7;
-    background: linear-gradient(90deg, indigo 0%,     rgb(39, 188, 237) 100%);
+    background: linear-gradient(90deg, indigo 0%,     #C3A7D7 100%);
     border: 0px;
     cursor: pointer;
     transition: var(--transition);

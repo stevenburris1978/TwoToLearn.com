@@ -1,11 +1,11 @@
 .header {
     font-size: larger;
-    font-weight: bolder;
-    text-transform: uppercase;
+    font-weight: bold;
     padding: 1.5rem;
     background-color: indigo;
     color: var(--color-white);
     align-items: "center";
+    min-width: 45rem;
   }
 
   .logoImage {
@@ -17,6 +17,9 @@
 
   .htext {
     margin-left: .7rem;
+    width: "100%";
+    color: black;
+    
   }
 
   .logorow {
@@ -24,7 +27,6 @@
     display: flex;
     padding: 3rem,;
     align-items: flex-start;
-    width: "100%";
     margin-bottom: .75rem;
   }
   nav {
@@ -32,11 +34,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #262626;
+    background-color: indigo;
     color: white;
     height: 3.75rem;
     padding: 1rem;
     border-radius: var(--border-radius-2);
+    
   }
   
   nav ul {
@@ -60,4 +63,8 @@
   nav a:hover {
     background-color: #e4bcbc;
     border-radius: .75rem;
+  }
+
+  nav a:active {
+    color: indigo
   }
