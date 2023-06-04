@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { FaTrashAlt, FaEdit } from "react-icons/fa";
-import details from "../../../assets/images/details.PNG";
+import { FaTrashAlt, FaEdit, FaCartPlus } from "react-icons/fa";
 import "./lesson.css";
 import Card from "../../shared/card/Card";
 import LessonContext from "../../context/LessonContext";
@@ -66,7 +65,7 @@ export default function Lesson({
         >${price}
         </div>
         <button className="cart">
-         <NavLink to="/cart"> <img src={details} alt="go to add to cart/details"/> </NavLink>
+         <NavLink to="/cart"> <FaCartPlus className= "cartColor"/></NavLink>
         </button>
         <button onClick={() => editLesson(lesson)} className="edit">
           <FaEdit />
