@@ -64,7 +64,7 @@ export default function Lesson({
           className="text-display"
         >${price}
         </div>
-        <button onClick={() => editLesson(lesson)} className="cart">
+        <button className="cart">
          <NavLink to="/cart"> <FaCartPlus className= "cartColor"/></NavLink>
         </button>
         <button onClick={() => editLesson(lesson)} className="edit">
