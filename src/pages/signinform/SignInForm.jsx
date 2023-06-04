@@ -59,7 +59,7 @@ export default function SignInForm() {
     if (showRegisterForm) {
       return (
         <>
-          <FormHeader title="Register" />
+          <FormHeader title="Register Page" />
           <form onSubmit={onSubmit}>
             <FormInput
               description="Name"
@@ -110,7 +110,7 @@ export default function SignInForm() {
     }
     return (
       <>
-        <FormHeader title="Login" />
+        <FormHeader title="Login Page" />
         <form onSubmit={onSignIn}>
           <FormInput
             description="Email"

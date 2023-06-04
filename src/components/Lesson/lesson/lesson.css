@@ -25,3 +25,17 @@
     font-size: 1.5rem;
     color: indigo
   }
+  .cart{
+    position: absolute;
+    top: .75rem;
+    right: 7.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    height: 9rem;
+    font-size: 1.5rem;
+  }
+
+  .cartColor{
+    color: indigo
+  }

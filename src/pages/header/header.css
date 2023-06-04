@@ -58,6 +58,7 @@
     text-decoration: none;
     padding: .75rem;
     transition: background-color 0.3s ease;
+    transform: translateX(-50%);
   }
   
   nav a:hover {
@@ -67,4 +68,5 @@
 
   nav a:active {
     color: indigo
+  
   }

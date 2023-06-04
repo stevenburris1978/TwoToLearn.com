@@ -37,7 +37,7 @@ export default function ProfilePage() {
   return (
     <div className="loginForm">
       <>
-        <FormHeader title="Edit Profile" />
+        <FormHeader title="Profile Page" />
         <div className="imageContainer">
           <img className="img" src={ttlearn} alt="TwoToLearn.Com Logo" />
         </div>

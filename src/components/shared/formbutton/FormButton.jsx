@@ -4,7 +4,7 @@ import "./formbutton.css";
 export default function FormButton(props) {
   return (
     <div id="button" className="row">
-      <button>{props.category}</button>
+      <button>{props.title}</button>
     </div>
   );
 }

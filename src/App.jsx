@@ -27,7 +27,7 @@ export default function App() {
           <Route path="/" element={<SignInForm />} />          
           <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>}/>
-          <Route path="/detailspage" element={<ProtectedRoute><DetailsPage /></ProtectedRoute>} />
+          <Route path="/details" element={<ProtectedRoute><DetailsPage /></ProtectedRoute>} />
           <Route path="/cart" element={<ProtectedRoute><CartPage /></ProtectedRoute>} />
           <Route path="/search" element={<ProtectedRoute><SearchPage /></ProtectedRoute>} />
           <Route path="/lesson/*" element={<ProtectedRoute><LessonRoutes /></ProtectedRoute>} />
